@@ -35,11 +35,14 @@ const Home = () => {
                 <div className="lg:absolute z-40 relative w-full h-full">
                     <ShowcaseContact/>
                 </div>
-                <div className="lg:absolute z-0 relative w-full h-full lg:mt-64 lg:pt-64">
-                    <img src={FooterBg} className="lg:absolute z-0 object-cover" alt="background img" />
-                </div>
+
                 <footer className="relative z-30">
-                <Footer />
+                    <div className="absolute z-0 w-full h-full lg:mt-64 lg:pt-64">
+                        <img src={FooterBg} className="absolute z-0 object-cover h-screen80 object-cover" alt="background img" />
+                    </div>
+                    <div className="">
+                        <Footer />
+                    </div>
                 </footer>
             </div>
             </div>
